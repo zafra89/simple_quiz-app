@@ -1,0 +1,74 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: rgb(193, 223, 224);
+    border: 2px solid rgb(0, 0, 59);
+    height: 55px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+    font-size: medium;
+}
+
+.btn:hover {
+    transition-duration: 250ms; 
+    background-color: rgb(136, 136, 136);
+}
+
+.btn.correct {
+    background-color: rgb(0, 255, 0);
+}
+
+.btn.wrong {
+    background-color: rgb(255, 0, 0);
+}
+
+.start-btn, .next-btn {
+    background-color: rgb(0, 166, 172);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    height: 60px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
