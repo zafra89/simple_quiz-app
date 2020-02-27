@@ -18,7 +18,6 @@ function startGame() {
     currentQuestionIndex = 0;
     questionContainerElement.classList.remove('hide');
     setNextQuestion();
-
 }
 
 function setNextQuestion() {
@@ -57,7 +56,7 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
     } else {
-        startButton.innerText = 'Restart';
+        startButton.innerText = 'Reiniciar';
         startButton.classList.remove('hide');
     }
 }
@@ -98,7 +97,7 @@ const questions = [
     },
 
     {
-        question: '¿Quién es el autor de la novela `La regenta`?',
+        question: '¿Quién es el autor de la novela "La regenta"?',
         answers: [
             {text: 'Azorín', correct: false},
             {text: 'Clarín', correct: true},
@@ -124,6 +123,36 @@ const questions = [
             {text: '4308', correct: false},
             {text: '6857', correct: true},
             {text: '5760', correct: false}
+        ]
+    },
+
+    {
+        question: '¿Cómo se llama el miedo a las alturas?',
+        answers: [
+            {text: 'Acrofobia', correct: true},
+            {text: 'Agorafobia', correct: false},
+            {text: 'Aerofobia', correct: false},
+            {text: 'Alturafobia', correct: false}
+        ]
+    },
+
+    {
+        question: '¿A cuál de estos autores NO relacionarías con la corriente del Existencialismo?',
+        answers: [
+            {text: 'Simone de Beauvoir', correct: false},
+            {text: 'Sartre', correct: false},
+            {text: 'Bachelard', correct: true},
+            {text: 'Camus', correct: false}
+        ]
+    },
+
+    {
+        question: '¿Cuál de estos grupos musicales surgió fuera del territorio estadounidense?',
+        answers: [
+            {text: 'Mötley Crüe', correct: false},
+            {text: 'Guns N` Roses', correct: false},
+            {text: 'Kiss', correct: false},
+            {text: 'T-Rex', correct: true}
         ]
     },
 ]
